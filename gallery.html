@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>gallery</title>
+	<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+	<style >
+
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			background:#A67B5B;
+		}
+		
+
+		.heading{
+        	margin: 20px;
+        	font-size: 50px;
+        	text-transform: capitalize;
+        	color: #6D2932;
+        	font-family:sans-serif;
+        	text-align: center;
+        	letter-spacing: 0.2rem;
+        	text-shadow: 0.3rem,.5rem rgba(0, 0, 0,.5);
+        }
+        .video-container{
+        	display: flex;
+        	justify-content: center;
+        	flex-wrap: wrap;
+        }
+        .video-container .video{
+        	height: 15rem;
+        	width: 15rem;
+        	margin: 2rem;
+        	box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+        	border-radius: 10PX;
+        	overflow: hidden;
+
+        }
+        .video-container .video video{
+        	height: 1005;
+        	width: 1005;
+        	outline: none;
+        	border: none;
+        	cursor: pointer;
+        	object-fit: COVER;
+
+        }
+         .video-container .video video:hover{
+         	transition: 2s linear;
+         	transform: scale(1.5);
+         }
+         .video-container .video  .active{
+         	position:fixed ;
+         	top: 50%;
+         	left: 50%;
+         	height: auto;
+         	width: 40%;
+         	box-shadow:0 0 0 100vh rgba(0, 0, 0, .7) ;
+         	transform: translate(-40%,-40%);
+         	z-index: 1;
+
+
+         }
+     .video-container .video  .active:hover{
+     	transition: none;
+     	 transform: translate(-50%,-50%);
+     }	
+
+     .video-container .video img{
+     	cursor: pointer;
+     }
+     .video-container .video img:hover{
+     		transition: 2s linear;
+     }
+
+     .video-container .video img  .active:hover{
+     	transition: none;
+     	 transform: translate(-50%,-50%);
+     }	
+
+
+
+     header{
+			top: 0;
+			left: 2;
+			width: 100%;
+			position: absolute;
+			padding: 20px 100px;
+			justify-content: space-between;
+			align-items: center;
+			display: flex;
+		}
+		header .logo{
+			max-width: 80px;
+			position: relative;
+			height: 90px;
+			width: 90px;
+			
+		}
+		header ul{
+			display:flex;
+			position: relative;
+			color:#FF9D23 ;
+		}
+		header ul li{
+			list-style: none;
+		}
+
+		header ul li a{
+			
+			margin-left:40px ;
+			display: inline-block;
+			font-weight: 400;
+			text-decoration: none;
+			color:#ECB176;
+
+
+		}
+		header ul li a:hover {
+ 			color: maroon;
+ 			transition: 3s;
+		}
+		 .footer{ 
+        	position: relative;
+        	text-decoration: none;
+        	text-align: center;
+        	min-height:100PX ;
+        	width: 100%;
+        	color: black;
+        	font-weight: bolder;
+        	
+        	margin-top: 20px;
+  	}		
+	</style>
+</head>
+<body>
+
+	<header>
+
+		<a href=""> <img src="images/logosh.jpg "class="logo"></a>
+
+	<ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="menu.html"> MENU</a></li>
+                <li><a href="customer.html">CUSTOMER</a></li>
+                <li><a href="marketposition.html">MARKET POSITION</a></li>
+                 <li><a href="branding.html">BRANDING</a></li>
+                  <li><a href="services.html">SERVICES</a></li> 
+                    <li><a href="review.html">REVIEWS</a></li>  
+                    <li><a href="gallery.html">GALLERY
+                    </a></li>
+                    <li><a href="contact_us.html">CONTACT US
+                    </a></li>
+            </ul>
+        </header>
+            </nav>
+
+	
+
+
+
+	<div class="container">
+		<div class="heading"> Gallery</div>
+	</div>
+
+		<div class="video-container">
+			
+
+			
+			<div class="video">
+				<img width="250"height ="250"src="images/sparkling_apple.jpg">
+			</div>
+
+			
+			<div class="video">
+				<img width="250"height ="250" src="images/sparkling_strawberry.jpg">
+			</div>
+
+
+			<div class="video">
+				<img width="250"height ="250"src="images/sparkling_manggo.jpg">
+			</div>
+
+				<div class="video">
+				<img  width="250"height ="250" src="images/passionfruit.jpg">
+			</div>
+
+			<div class="video">
+				<img  width="250"height ="250" src="images/promotion3.jpg">
+			</div>
+
+			<div class="video">
+				<img width="250"height ="250" src="images/promotion2.jpg">
+			</div>
+
+			<div class="video">
+				<img width="250"height ="250" src="images/starhouse1.jpg">
+			</div>
+
+			<div class="video">
+				<img width="250"height ="250" src="images/starhouse2.jpg">
+			</div>
+
+		
+
+			<div class="video">
+				<img width="250"height ="250" src="images/choc.jpg">
+			</div>
+
+			<div class="video">
+				<img width="250"height ="250" src="images/cofee2.jpg">
+			</div>
+			<div class="video">
+				<img width="250"height ="250" src="images/coffe1.jpg">
+			</div>
+
+			
+
+			<div class="video">
+				<img width="250"height ="250" src="images/air.jpg">
+			</div>
+		</div>
+
+		<div class="video-container">
+		<div class="video">
+			<video width="320" height="240" autoplay muted>
+  			<source src="video/video1.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video>
+		</div>
+		<div class="video">
+			<video width="320" height="240" autoplay muted>
+  			<source src="video/video2.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video>
+		</div>
+		<div class="video">
+			<video width="320" height="240" autoplay muted>
+  			<source src="video/video3.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video>
+		</div>
+		<div class="video">
+			<video width="320" height="240" autoplay muted>
+  			<source src="video/video4.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video>
+		</div>
+		<div class="video">
+			<video width="320" height="240" autoplay muted>
+  			<source src="video/video5.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video>
+		</div>
+		<div class="video">
+			<video width="320" height="240" autoplay muted>
+  			<source src="video/video6.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video>
+		</div>
+		<div class="video">
+			<video width="320" height="240" autoplay muted>
+  			<source src="video/video7.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video>
+		</div>
+		<div class="video">
+			<video width="320" height="240" autoplay muted>
+  			<source src="video/video8.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video>
+		</div>
+	</div>
+</div>
+</div>
+<script >
+	var video=document.querySelectorAll('video')
+
+	video.forEach(play=> play.addEventListener('click',()=>{
+		play.classList.toggle('active');
+		if(play.paused){
+			play.play();
+		}else{
+			play.play();
+			play.currentTime=0;
+		}
+		
+	}));
+	
+</script>
+
+				<footer>
+				<div class="footer">
+				<div class="col">
+					
+						<p><i class="fa-solid fa-location-dot"></i>LOT 427, KAMPUNG PADANG BONGOR BATU 1 3/4 JALAN PENGKALAN CHEPA PENGKALAN CHEPA, 15400 Kota Bharu, Kelantan</p>
+						<P><i class="fa-solid fa-phone"></i> 016-936 6173</P>
+						
+				
+
+
+				<div class="footer">
+				<div class="col">
+					<ul>
+						<a href="https://r.grab.com/g/6-20250126_214052_210CFBBA59D6451A884D450882EA120C_MEXMPS-1-C6WTVF6KPE4FL2"><img width="58" height="58" src="images/grab96.png"></a>
+						<a href="https://www.tiktok.com/@starcoffeehouseofficial"><img width="46"height="46" src="images/tiktok.gif"></a>
+						
+						<a href="https://foodpanda.page.link/UGYjjo4i9dW65crP8"><img src="images/foodpanda.png"></a>
+
+
+				
+
+				<p>&copy;2025|| All right reserved by Nabila Wa</p>
+			</footer>
+			
+
+	
+
+
+</body>
+</html>
