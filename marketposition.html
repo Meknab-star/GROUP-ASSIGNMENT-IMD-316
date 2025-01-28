@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Market Position</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		body{
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			min-height: 100vh;
+			background-image: url(images/coffe4.jpg);
+		}
+
+		h1{
+
+			font-size: 45px;
+			font-family: Roboto;
+			margin-bottom: 30px;
+			margin-top: 20px;
+			text-align: center;
+			color: black;
+			font-weight: 5000;
+		}
+
+		.Position{
+			margin: 0px auto;
+			width: 1000px;
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+		.Position .box:hover{
+			transition: 4s;
+			color: #B8621B;
+		}
+
+		.Position .box{
+			padding: 12px;
+			width: 300PX;
+			height: 100;
+
+			background-color: #706233;
+			box-shadow: rgba(0, 0, 0, 1.7);
+			overflow: hidden;
+			margin: 15px;
+			font-family: roboto;
+			border-radius: 25PX;
+			border-color: #F3C623;
+			border: #F3C623;
+		}
+		}
+
+		.Position:hover .box{
+			transition: 3s;
+			color: #000000;
+		}
+
+		.Position .box img{
+			position: center;
+			width:100px;
+			height: 100px;
+			align-items: center;
+			text-align: center;
+			justify-content: center;
+			margin-left: 82PX;
+			margin-right: 70PX;
+			margin-top: 20px;
+			display:flex;
+			border-radius: 20px;
+		}
+	
+		
+		.Position .box i{
+			color: #FFEB00;
+			margin: 16px;
+			transition: inherit;
+			transition-delay: 0s;
+		}
+		.Position h4{
+			color: white;
+			margin-bottom: 15px;
+			margin-top: 20px;
+			transition: inherit;
+			transition-delay: 0.5s;
+			font-weight: 400;
+			align-items: center;
+			text-align: center;
+		}
+		.Position:hover h4{
+			color: #594545;
+			transition: 2s;
+		}
+
+		.Position:hover p{
+			color: white ;
+		}
+
+		.Position p{
+			color: #000000;
+			transition: inherit;
+			transition-delay: 0.1s;	
+		}
+
+		.Position:hover p{
+			color: white ;
+		}
+		span{
+			position: relative;
+			display: inline-block;
+			color: #503C3C;
+
+		}
+		nav ul li{
+            display: inline-block;
+            list-style-type: none;
+            padding: 10px 5px;
+            border-radius: 20PX;
+            margin-top: 50PX;
+        }
+         nav ul li a{
+            color: #DDA853;
+            text-transform:capitalize ;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 15PX;
+            background-color: maroon;
+            border-radius: 20PX;
+        }
+        nav ul li a:hover{
+            transition: 1s;
+            color: BLACK;
+        }
+        .footer{
+        	
+        	position: relative;
+        	text-decoration: none;
+        	text-align: center;
+        	min-height:100PX ;
+        	width: 100%;
+        	color: white;
+        	
+        
+        	
+        }
+
+        .col p{
+        	margin-bottom: 20px;
+        	font-size: 17px;
+        	
+        	margin-left: 20px;
+        }
+
+        .col p i{
+        	margin:px ;
+        	padding: 5px;
+        	
+        }
+        .col img{
+        	border-radius: 25px;
+        	width: 70px;
+        }
+        .heading{
+        	margin: 20px;
+        	font-size: 30px;
+        	text-transform: capitalize;
+        	color: #6D2932;
+        	font-family:sans-serif;
+        	text-align: center;
+        	letter-spacing: 0.2rem;
+        	text-shadow: 0.3rem,.5rem rgba(0, 0, 0,.5);
+        }
+        .video-container{
+        	display: flex;
+        	justify-content: center;
+        	flex-wrap: wrap;
+        }
+        .video-container .video{
+        	height: 15rem;
+        	width: 15rem;
+        	margin: 2rem;
+        	box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+        	border-radius: 10PX;
+        	overflow: hidden;
+
+        }
+        .video-container .video video{
+        	height: 1005;
+        	width: 1005;
+        	outline: none;
+        	border: none;
+        	cursor: pointer;
+        	object-fit: COVER;
+
+        }
+         .video-container .video video:hover{
+         	transition: 2s linear;
+         	transform: scale(1.5);
+         }
+         .video-container .video  .active{
+         	position:fixed ;
+         	top: 50%;
+         	left: 50%;
+         	height: auto;
+         	width: 50%;
+         	box-shadow:0 0 0 100vh rgba(0, 0, 0, .7) ;
+         	transform: translate(-50%,-50%);
+         	z-index: 1;
+
+         }
+     .video-container .video  .active:hover{
+     	transition: none;
+     	 transform: translate(-50%,-50%);
+     }
+
+      .footer{
+        	
+        	
+	          
+        	position: relative;
+        	text-decoration: none;
+        	text-align: center;
+        	min-height:100PX ;
+        	width: 200%auto;
+        	min-width: 200;
+        	color: black;
+        	font-weight: bolder;
+        	background:#AB886D;
+        	margin-top: 20px;
+
+	              
+        	
+        
+        	
+        }
+
+
+
+
+	</style>
+</head>
+
+ 
+<body>
+
+	<nav> 
+		<ul>
+                <li><a href="starhouse_homepage.html">HOME</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="customer.html">CUSTOMER</a></li>
+                <li><a href="marketposition.html">MARKET POSITION</a></li>
+                 <li><a href="branding.html">BRANDING</a></li>
+                  <li><a href="services.html">SERVICES</a></li> 
+                    <li><a href="review.html">REVIEWS</a></li>
+                    <li><a href="gallery.html">GALLERY
+                    </a></li>
+                    <li><a href="contact_us.html">CONTACT US
+                    </a></li>
+                
+            </ul>
+
+	</nav> 
+
+		</div>
+		<div class="inner">
+		<div class="header">
+		<h1>Our <span>Market</span> Position</h1>
+		<div class="Position">
+			<div class="box">
+				<img src="images/market1.jpg">
+				<h4>Premium Quality with Accessibility</h4>
+				<p>At Star House Coffee, we take great satisfaction in providing high-quality, ethically sourced coffee that is carefully crafted for outstanding flavor. We make premium drinks available to a broad range of people, in contrast to upscale specialized coffee shops that may seem exclusive or expensive. Everyone, from professionals to students, may enjoy the ideal cup without sacrificing quality thanks to our price strategy. </p>
+				
+			</div>
+			
+
+
+			<div class="box">
+				
+				<img src="images/market2.jpg">
+				<h4>Community-Focused Space</h4>
+				<p> Whether it's hosting study groups, informal get-togethers, or offering a cozy workspace, our café is made to cater to the various needs of the communities we serve. Star House Coffee is more than just a coffee shop; it's a community center where people come together to connect, relax, and share meaningful moments. This strong emphasis on building relationships distinguishes us from larger, impersonal coffee chains.  </p>
+				
+			</div>
+
+
+			<div class="box">
+				
+				<img src="images/market3.jpg">
+				<h4>Bridging Comfort and Sophistication</h4>
+				<p> The elegance of specialty coffee and a warm, welcoming ambiance are expertly balanced at our café. Star House Coffee provides a welcoming yet elegant setting, in contrast to some cafes that only offer high-end experiences, which can be daunting. We make sure patrons are comfortable while savoring beautifully made drinks that are comparable to those available in upscale restaurants. </p>
+			</div>
+
+			<div class="box">
+				<img src="images/market4.jpg">
+				<h4>Diverse Target Audience</h4>
+				<p>We serve to a wide but distinct clientele, which includes working professionals in need of a quick but excellent cup of coffee, students in need of a comfortable and productive study area, families spending time together, and remote employees seeking a serene and motivating workplace. This broad appeal guarantees that we draw in a variety of devoted clients who return time and time again.</p>	
+			</div>
+
+
+			<div class="box">
+				<img src="images/market5.jpg">
+				<h4>Unique Atsmosphere</h4>
+				<p>At Star House Coffee, we think that just as important as the coffee is the experience. It seems like a second home thanks to our cozy, welcoming décor and the calming scent of freshly brewed coffee. We stand apart in a crowded market because our customers leave feeling rejuvenated and appreciated, whether they came to unwind, work, or socialize.</p>	
+			</div>
+
+			<div class="box">
+				<img src="images/market6.jpg">
+				<h4>Mid to Premium Market Segment</h4>
+				<p>We have carved out a distinct niche for ourselves in the mid-to-premium market sector by strategically placing ourselves between fast-food coffee chains and ultra-exclusive specialty coffeehouses. Our products offer the ideal balance of quality, affordability, and outstanding customer service, making us the go-to option for clients seeking excellent coffee without the luxuries. We maintain our position as a reputable and well-liked café brand by continuously providing value and unforgettable experiences.</p>
+	
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+		
+
+
+			<div class="footer">
+				<div class="col">
+					
+							<p><i class="fa-solid fa-location-dot"></i>LOT 427, KAMPUNG PADANG BONGOR BATU 1 3/4 JALAN PENGKALAN CHEPA PENGKALAN CHEPA, 15400 Kota Bharu, Kelantan</p>
+						<P><i class="fa-solid fa-phone"></i> 016-936 6173</P>
+				</div>
+				<div class="col">
+					<ul>
+						<a href="https://food.grab.com/my/en/restaurant/texas-chicken-the-envictus-delivery/1-C3AVAT5DKB3HAE?sourceID=20240426_085517_43313EE2B7334AF5B19BDC3EA1FD7B0A_MEXMPS"><img src="images/grab96.png"></a>
+						<a href="https://www.tiktok.com/@starcoffeehouseofficial"><img src="images/tiktok50.png"></a>
+						
+						<a href="https://foodpanda.page.link/UGYjjo4i9dW65crP8"><img src="images/foodpanda.png"></a>
+						
+					</ul>
+				</div>
+
+				<p>&copy;2025|| All right reserved by Star Coffee Housea</p>
+
+
+
+				
+			</footer>
+
+
+
+
+
+			
+
+
+	
+
+</body>
+</html>

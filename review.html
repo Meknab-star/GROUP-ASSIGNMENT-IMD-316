@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>REVIEW CUSTOMERS</title>
+	<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+
+			
+		}
+	body{
+		font-size: 15px;
+		font-family: "Times New Roman",sans-serif;
+		background: url(images/sh4.jpg);
+		
+		
+		
+	}
+	@keyframes spin{
+		0%{
+
+		}
+		50%{
+			scale: 2;
+			transform: rotate(0);
+			border-radius: 0;
+		}
+		100%{
+			transform:rotate(360deg);
+			border-radius: 50%;
+
+		}
+	}
+	.container{
+		margin: auto;
+		padding: 1px 15px;
+		max-width: 600px;
+		margin-top: 4px;
+
+
+	}
+	.headersection{
+		margin-bottom:10px;
+		text-align: center;
+		margin-top:0px;
+		padding-bottom: 10px;
+
+		
+
+	}
+	.headersection .title{
+		font-weight: 600px;
+		font-size: 40px;
+		text-transform:capitalize ;
+		color:#AF8F6F ;
+		padding-bottom: 10px;
+		padding-top: 2px;
+
+		
+	}
+
+
+	
+
+	.REVIEWS{
+		padding: 60px ;
+
+	}
+
+	.review-item{
+		background-color: white;
+		padding: 10px;
+		border-radius: 20px;
+		margin-bottom: 30px;
+		transition: 3s;
+		box-shadow: 2px 2px 40px black;
+		cursor: pointer;
+		margin: 15px;
+		margin-top: 1px;
+		transition: 0.2 ease;
+		animation-duration:3S;
+		animation-name: spin;
+		animation-timing-function: ease-in-out;
+		animation-delay:0.3s;
+		
+		animation-direction: reverse;
+
+
+
+
+		
+	}
+	.review-item:hover{
+		color: yellow;
+		transform-box: 3s;
+	
+	}
+	
+	.review-item img{
+		border-radius: 10px;
+		margin-right: 20px;
+		vertical-align: middle;
+		max-width: 70px;
+	}
+
+	.review-item .info{
+		align-items: center;
+		display: flex;
+	}
+	.review-item .name{
+		font-weight: 600px;
+		text-transform: capitalize;
+		font-size: 25px;
+		line-height: 1.3;
+		color: black;
+	}
+	.review-item p{
+		padding: 5px;
+		color:#3D3D3D;
+		margin-top: 21px;
+	}
+	.review-item p:hover{
+		color: maroon;
+		transition: 3s;
+	}
+
+		nav ul .logo{
+			max-width: 80px;
+			position: relative;
+			height: 100px;
+			width: 90px;
+			
+		}
+		nav ul{
+			display: flex;
+			position: relative;
+			color:#FF9D23 ;
+			padding-left: 70px;
+			padding-top: 40px;
+			align-items: center;
+		}
+		nav ul li{
+			list-style: none;
+		}
+
+		nav ul li a{
+			
+			margin-left:40px ;
+			display: inline-block;
+			font-weight: 400;
+			text-decoration: none;
+			color:#ECB176;
+			padding-top: 20px;
+			align-items: center;
+
+
+		}
+		nav ul li a:hover {
+ 			color: maroon;
+ 			transition: 3s;
+ 		}
+        	
+	          .footer{
+ 	
+        	position: relative;
+        	text-decoration: none;
+        	text-align: center;
+        	height: 110px auto;
+        	width: 1000000 auto;
+        	color: black;
+        	font-weight: bolder;
+        	background:#AB886D;
+        	margin-top: 20px;
+       }
+        .col p{
+        	margin-bottom: 20px;
+        	font-size: 17px;
+        	padding: 5px;
+        	margin-left: 20px;
+        }
+
+        .col p i{
+        	margin:px ;
+        	padding: 5px;
+        	
+        }
+        .col img{
+        	border-radius: 25px;
+        	width: 70px;
+        }
+
+
+	</style>
+</head>
+<body>   
+ 	
+
+		<nav>
+		<ul>
+			<a href=""> <img src="images/logosh.jpg "class="logo"></a>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="menu.html"> MENU</a></li>
+                <li><a href="customer.html">CUSTOMER</a></li>
+                <li><a href="marketposition.html">MARKET POSITION</a></li>
+                 <li><a href="branding.html">BRANDING</a></li>
+                  <li><a href="services.html">SERVICES</a></li> 
+                    <li><a href="review.html">REVIEWS</a></li>  
+                    <li><a href="gallery.html">GALLERY
+                    </a></li>
+                    <li><a href="contact_us.html">CONTACT US
+                    </a></li>
+            </ul>
+        </nav>
+        
+
+	
+
+
+	 
+
+	<section class="REVIEWS">
+
+		<div class="container">
+			<div class="headersection">
+
+			<h2 class="title">What our customer says</h2>
+
+		</div>
+		
+	
+		
+				
+			<div class=" review-item">
+				<div class="info">
+				<img src="images/username.gif">
+				<div class="text-box">
+					<h3 class="name">Ali Syariati</h3>
+				</div>
+			</div>
+			<p>Great place to lepak with friends….</p>
+			<img src="images/review1.png">
+			<img src="images/review2.png">
+			<img src="images/review3.png">
+
+			<div class="rates"></div>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+				</div>
+			
+		<div class=" review-item">
+				<div class="info">
+				<img src="images/username.gif">
+				<div class="text-box">
+					<h3 class="name">Tuan Qistina</h3>
+				</div>
+			</div>
+			<p>Makanan sedap , friendly staff and good environment 👍🏻</p>
+			<img src="images/review4.png">
+			<div class="rates"></div>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+				</div>
+			
+
+			<div class="review-item">
+				<div class="info">
+				<img src="images/username.gif">
+				<div class="text-box">
+					<h3 class="name">Izz Haikal</h3>
+				</div>
+			</div>
+			<p>the food was fine , the staff is friendy,, love the vibe here,, will be here again
+			Food: 5/5  |  Service: 5/5  |  Atmosphere: 5/5</p>
+			<p>Recommended dishes: Ice Latte</p>
+			<p>Parking space:Plenty of parking</p>
+			<p>Parking options:Free of charge parking lot</p>
+			<img src="images/review5.png">
+			<div class="rates"></div>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+				</div>
+			<div class=" review-item">
+				<div class="info">
+				<img src="images/username.gif">
+				<div class="text-box">
+					<h3 class="name">Atiq Danish</h3>
+				</div>
+			</div>
+			<p>Overall the food, service tip top and the part more interesting the place coz it look a modern of the camping view.</p>
+				<p>Parking: easy to parking</p>
+				<img src="images/review6.png">
+				<img src="images/review9.png">
+			<div class="rates"></div>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+				</div>
+			
+
+			<div class="review-item">
+				<div class="info">
+				<img src="images/username.gif">
+				<div class="text-box">
+					<h3 class="name">Amirul Izzani</h3>
+				</div>
+			</div>
+			<p>The coffee is too goof to resist!!!/<p>
+				<img src="images/review7.png">
+				<img src="images/review8.png">
+
+			<div class="rates"></div>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+		
+			
+</section>
+
+
+			
+        		<footer>
+				<div class="footer">
+				<div class="col">
+					
+						<p><i class="fa-solid fa-location-dot"></i>LOT 427, KAMPUNG PADANG BONGOR BATU 1 3/4 JALAN PENGKALAN CHEPA PENGKALAN CHEPA, 15400 Kota Bharu, Kelantan</p>
+						<P><i class="fa-solid fa-phone"></i> 016-936 6173</P>
+						
+						<div class="footer">
+				<div class="col">
+					<ul>
+						<a href="https://r.grab.com/g/6-20250126_214052_210CFBBA59D6451A884D450882EA120C_MEXMPS-1-C6WTVF6KPE4FL2"><img width="48" height="48" src="images/grab96.png"></a>
+						<a href="https://www.tiktok.com/@starcoffeehouseofficial"><img width="48" height="48"src="images/tiktok50.png"></a>
+						
+						<a href="https://foodpanda.page.link/UGYjjo4i9dW65crP8"><img width="48" height="48" src="images/foodpanda.png"></a>
+						
+					</ul>
+
+				<p>&copy;2025||All right reserved by Star Coffee House bila Wa</p>
+
+
+
+				
+			</footer>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

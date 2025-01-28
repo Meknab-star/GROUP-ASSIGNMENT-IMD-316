@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>customer</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+	
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		body{
+			background: #74512D;
+		}
+
+		.wrapper{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			
+			font-family: 'raleway';
+			background:#FFDE4D;
+			background-image: url(images/customer_wp.jpg);
+			background-size: cover;
+		}
+		.wrapper h1{
+			text-align: center;
+			font-weight: 500;
+			margin: 25px 0;
+			font-size: 40px;
+			font-family: "cursive;";
+			
+		}
+		.content-box{
+			justify-content: space-between;
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 30px;
+			width: 1000px;
+		}
+
+		span{
+			color: white;
+		}
+
+
+		nav ul li{
+            display: inline-block;
+            list-style-type: none;
+           	margin-right: 5px;
+            border-radius: 20PX;
+            margin-top: 40px;
+            margin-left: 30px;
+            margin-bottom: 20px;
+
+             
+          }
+         nav ul li a{
+         	color: black;
+            text-transform:capitalize ;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 15PX;
+            background-color: #FFEAC5;
+            border-radius: 20PX;
+            
+
+        }
+        nav ul li a:hover{
+            transition: 1s;
+            color: rosybrown;
+        }
+		.card{
+			display: flex;
+			width: 320px;
+			min-height: 225px;
+			border-radius: 7px;
+			justify-content: center;
+			padding: 31px;
+			align-items: center;
+			background: black;
+			flex-direction: column;
+			box-shadow: 0px 16px 50px black;
+			margin: 5px 4px;
+			margin-top: 5px;
+			overflow: hidden;
+		}
+		.card i{
+			margin: 21px;
+			color: #FFB200;
+			font-size: 50px;
+			margin-top: 20px;
+		}
+
+		.card h2{
+		font-weight: 401px;
+		text-align: center;
+		margin-bottom: 13px;
+		color:#AF8260;
+		}
+
+		.card p{
+			color: #FFDBB5;
+			text-align: center;
+			margin-top: 10PX;
+
+		}
+		.card:hover i, 
+		.card:hover p{
+			color: maroon;
+		}
+
+		.card:hover h2{
+			font-weight: 600px;
+			color: white;
+		}
+		 .footer{
+        	
+        	
+	          
+        	position: relative;
+        	text-decoration: none;
+        	text-align: center;
+        	min-height:100PX ;
+        	width: 100%;
+        	color: black;
+        	font-weight: bolder;
+        	background:#AB886D;
+        	margin-top: 20px;
+
+	              
+        	
+        
+        	
+        }
+        }
+		header{
+			top: 0;
+			left: 0;
+			width: 100%;
+			position: absolute;
+			padding: 20px 100px;
+			justify-content: space-between;
+			align-items: center;
+			display: flex;
+		}
+		header .logo{
+			max-width: 80px;
+			position: relative;
+			height: 90px;
+			width: 90px;
+			
+			
+		}
+		header ul{
+			display: flex;
+			position: relative;
+			color:#FF9D23 ;
+			padding-top: 40px;
+			padding-bottom: 10px;
+			padding-left: 60px;
+			padding-right: 40px;
+			margin-left: 30px;
+			margin-bottom: 30px;
+		}
+		header ul li{
+			list-style: none;
+		}
+
+		header ul li a{
+			
+			margin-left:40px ;
+			display: inline-block;
+			font-weight: 400;
+			text-decoration: none;
+			color:#ECB176;
+
+
+		}
+		header ul li a:hover {
+ 			color: maroon;
+ 			transition: 3s;
+		}
+        .col p{
+        	margin-bottom: 20px;
+        	font-size: 17px;
+        	
+        	margin-left: 20px;
+        }
+
+        .col p i{
+        	margin:px ;
+        	padding: 5px;
+        	
+        }
+        .col img{
+        	border-radius: 25px;
+        	width: 60px;
+        }
+        .slider-wrapper{
+        	position: relative;
+        	max-width:50rem ;
+        	margin: 0 auto;
+        }
+        .slider{
+        	display: flex;
+        	aspect-ratio: 16/10;
+        	scroll-snap-type: X mandatory;
+        	scroll-behavior: smooth;
+        	overflow-x: auto;
+        	box-shadow: 0 1.5rem 3rem -0.76rem hsla(0, 0%, 0%, 0.25);
+        	border-radius: 20px;
+        }
+        .slider img{
+        	flex: 1 0 100%;
+        	scroll-snap-align:start ;
+        }
+        .slider-nav{
+        	display: flex;
+        	column-gap: 1rem;
+        	position: absolute;
+        	left: 50%;
+        	bottom: 1.25rem;
+        	transform: translateX(-50%);
+        	z-index: 1;
+        }
+        .slider-nav a{
+        	width: 0.6rem;
+        	height: 0.6rem;
+        	background-color: #EB5B00;
+        	opacity: 0.75;
+        	border-radius: 50%;
+        	transition: opacity ease 250ms;
+        }
+        .slider nav a:hover{
+        	opacity: 1;
+        }
+
+.back-video{
+			position:absolute;
+			right: 0;
+			bottom: 0;
+			z-index: -1;
+		}
+		@media (min-aspect-ratio:16/9){
+				.back-video{
+					width: 100%;
+					height: 100%auto;
+				}
+
+		}
+
+		@media (max-aspect-ratio:16/9){
+				.back-video{
+					width: auto;
+					height: 100%;
+				}
+		}
+
+
+
+
+
+
+
+
+
+		
+		
+
+
+		
+	</style>
+</head>
+<body>
+
+			
+		
+			<header>
+				
+				<ul>
+			
+		
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="menu.html"> MENU</a></li>
+                <li><a href="customer.html">CUSTOMER</a></li>
+                <li><a href="marketposition.html">MARKET POSITION</a></li>
+                 <li><a href="branding.html">BRANDING</a></li>
+                  <li><a href="services.html">SERVICES</a></li> 
+                    <li><a href="review.html">REVIEWS</a></li>  
+                    <li><a href="gallery.html">GALLERY
+                    </a></li>
+                    <li><a href="contact_us.html">CONTACT US
+                    </a></li>
+            </ul>
+        </header>
+
+
+
+         <div class="hero">
+
+	<video autoplay loop muted plays-inline class="back-video">
+		<source src="video/videobackground.mp4" type="video/mp4">
+
+	</video>
+	
+
+	<div class="wrapper">
+			<h1>Who <span>We </span>Serve?</h1>
+
+			
+	
+
+
+
+		<div class="content-box">
+			<div class="card">
+				<i class="bx bxs-group" aria-hidden="true"></i>
+					<h2>Remote Workers</h2>
+					<p>Designed with flexibility and efficiency in mind, our café offers the ideal environment for working remotely. Take advantage of a serene and motivating environment, dependable Wi-Fi, cozy seating, and delectable refreshments to keep you going while working.</p>
+					
+
+					</div>
+
+	
+			<div class="card">
+				<i class="bx bx-male-female" aria-hidden="true"></i>
+					<h2>Families</h2>
+					<p>Families: Our goal is to establish a cozy, welcoming space where families may enjoy time together. We're a place for special moments and shared smiles, whether it's parents relaxing with a cup of coffee or kids indulging in our delicious delicacies.</p>
+					</div>
+						
+
+			<div class="card">
+				<i class="bx bxs-graduation" aria-hidden="true"></i>
+					<h2>Students</h2>
+					<p>Students: For students seeking a comfortable and productive atmosphere, Star House Coffee is ideal. Our friendly atmosphere and free Wi-Fi make learning fun, whether you're looking for a spot to study in peace, a table for group talks, or a location to get ready for an exam.</p>
+					
+					</div>
+
+			<div class="card">
+				<i class="fa-solid fa-user-doctor"aria-hidden="true"></i>
+					<h2>Busy Professionals</h2>
+					<p> We recognize that professionals have hectic lifestyles and want a dependable, superior coffee experience to kickstart their day or maintain their energy levels. Our convenient service and high-quality brews guarantee that you stay energized and focused, whether you're stopping in for a mid-day coffee break or a quick stop before work.</p>
+					</div>
+						
+
+			<div class="card">
+				<i class="fa-solid fa-mug-saucer"aria-hidden="true"></i>
+					<h2>Coffee Enthusiasts</h2>
+					<p>We provide carefully made brews utilizing the best beans from across the world for individuals who value the subtleties of coffee. Our menu is made to satisfy your palate, whether you like a traditional espresso, a creamy latte, or something new.</p>
+					</div>
+						
+			<div class="card">
+				<i class="fa-solid fa-people-group"aria-hidden="true"></i>
+					<h2>Casual Visitors</h2>
+					<p> Sometimes all you need is a spot to unwind and have fun. At Star House Coffee, we offer a cozy setting where anyone may relax, read a book, talk to friends, or just take in the calming scent of freshly made coffee. </p>
+					
+					</div>
+				</div>
+
+				<section class="container">
+					<div class="slider-wrapper">
+					<div class="slider">
+						<img id="slide-1" src="images/cust.jpg">
+						<img id="slide-2" src="images/cust1.jpg">
+						<img id="slide-3" src="images/cust3.jpg">
+						<img id="slide-4" src="images/cust2.jpg">
+						<img id="slide-6" src="images/5.jpg">
+						<img id="slide-6" src="images/starhouse1.jpg">
+						<img id="slide-7" src="images/starhouse2.jpg">
+						<img id="slide-8" src="images/sh4.jpg">
+					</div>
+					<div class="slider-nav">
+						<a href="#slide-1"></a>
+						<a href="#slide-2"></a>
+						<a href="#slide-3"></a>
+						<a href="#slide-4"></a>
+						<a href="#slide-5"></a>
+						<a href="#slide-6"></a>
+						<a href="#slide-7"></a>
+						<a href="#slide-8"></a>
+
+					</div>
+				</div>
+				</section>
+
+
+
+				<div class="footer">
+				<div class="col">
+					
+						<p><i class="fa-solid fa-location-dot"></i>LOT 427, KAMPUNG PADANG BONGOR BATU 1 3/4 JALAN PENGKALAN CHEPA PENGKALAN CHEPA, 15400 Kota Bharu, Kelantan</p>
+						<P><i class="fa-solid fa-phone"></i> 016-936 6173</P>
+						
+				</div>
+
+
+				<div class="footer">
+				<div class="col">
+					<ul>
+						<a href="https://r.grab.com/g/6-20250126_214052_210CFBBA59D6451A884D450882EA120C_MEXMPS-1-C6WTVF6KPE4FL2"><img src="images/grab96.png"></a>
+						<a href="https://www.tiktok.com/@starcoffeehouseofficial"><img src="images/tiktok50.png"></a>
+						
+						<a href="https://foodpanda.page.link/UGYjjo4i9dW65crP8"><img src="images/foodpanda.png"></a>
+						
+
+
+					</ul>
+
+				</div>
+
+				<p>&copy;2025|| All right reserved by Star Coffee House</p>
+							<div class="AUDIO">
+        <audio controls autoplay>
+  <source src="audio/coffee_shop.mp3" type="audio/mp3">
+ 
+Your browser does not support the audio element.
+</audio>
+</div>
+
+
+
+				
+			</footer>
+						
+						
+
+
+
+
+
+</body>
+</html>

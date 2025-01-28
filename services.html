@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<style>
+  body {
+  background-image: url(images/sch23.jpg);
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman',;sans-serif;
+  }
+
+header {
+  background-color: black;
+  text-align:center;
+  padding: 50px;
+  color: whitesmoke;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+   
+header ul{
+  display: flex;
+  position: relative;
+  color:sandybrown ;
+}
+
+header ul li{
+  text-align: center;
+  list-style: none;
+}
+
+header ul li a{
+  margin-left:40px ;
+  text-align: center;
+  font-weight: 400;
+  text-decoration: none;
+  color:sandybrown ;
+}
+   
+header ul li a:hover {
+  color: gray;
+  transition: 3s;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card h2, .card ul {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color:sandybrown;
+  display: flex;
+  align-items: center;
+}
+
+.card h2 i {
+  margin-right: 10px;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card ul li {
+  margin: 10px 0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.card ul li i {
+  color: #4caf50;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .card h2 {
+    font-size: 1.2rem;
+  }
+
+  .card ul li {
+    font-size: 0.9rem;
+  }
+}
+</style>
+<body>
+  <header class="logo-section">
+    <img src="images/sch.png" class="logo">
+    <h1>SERVICES</h1>
+    <br>
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="history.html">HISTORY</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="customer.html">CUSTOMER</a></li>
+        <li><a href="marketposition.html">MARKET POSITION</a></li>
+        <li><a href="branding.html">BRANDING</a></li>
+        <li><a href="services.html">SERVICES</a></li> 
+        <li><a href="review.html">REVIEWS</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="contact_us.html">CONTACT US</a></li> 
+      </ul>
+  </header>
+  <div class="container">
+      <h1 style="border:5px solid lightgray; color:whitesmoke;">Discover the amazing services we offer to make your experience better.</h1>
+    </header>
+  <br>
+  <br>
+
+    <div class="grid">
+      <!-- Service Options Section -->
+      <section class="card" style="background-image: url(images/sch11.jpg);">
+        <h2><i class="fa fa-concierge-bell"></i> Service Options</h2>
+        <ul>
+          <li><i class="fa fa-check-circle"></i> Drive-through</li>
+          <li><i class="fa fa-check-circle"></i> Takeaway</li>
+          <li><i class="fa fa-check-circle"></i> Dine-in</li>
+        </ul>
+      </section>
+
+      <!-- Offerings Section -->
+      <section class="card" style="background-image: url(images/sch10.jpg);">
+        <h2><i class="fa fa-mug-hot"></i> Offerings</h2>
+        <ul>
+          <li><i class="fa fa-check-circle"></i> Coffee</li>
+          <li><i class="fa fa-check-circle"></i> Small plates</li>
+        </ul>
+      </section>
+
+      <!-- Atmosphere Section -->
+      <section class="card" style="background-image: url(images/sch29.jpg);">
+        <h2><i class="fa fa-smile"></i> Atmosphere</h2>
+        <ul>
+          <li><i class="fa fa-check-circle"></i> Casual</li>
+          <li><i class="fa fa-check-circle"></i> Cosy</li>
+        </ul>
+      </section>
+
+      <!-- Crowd Section -->
+      <section class="card" style="background-image: url(images/sch30.jpg);">
+        <h2><i class="fa fa-users"></i> Crowd</h2>
+        <ul>
+          <li><i class="fa fa-check-circle"></i> Groups</li>
+        </ul>
+      </section>
+
+      <!-- Parking Section -->
+      <section class="card" style="background-image: url(images/sch31.jpg);">
+        <h2><i class="fa fa-parking"></i> Parking</h2>
+        <ul>
+          <li><i class="fa fa-check-circle"></i> Free of charge street parking</li>
+          <li><i class="fa fa-check-circle"></i> Free parking lot</li>
+          <li><i class="fa fa-check-circle"></i> Plenty of parking</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

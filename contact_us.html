@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: black;
+  text-align:center;
+  padding: 50px;
+  color: whitesmoke;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+   
+header ul{
+  display: flex;
+  position: relative;
+  color:sandybrown ;
+}
+
+header ul li{
+  text-align: center;
+  list-style: none;
+}
+
+header ul li a{
+  margin-left:40px ;
+  text-align: center;
+  font-weight: 400;
+  text-decoration: none;
+  color:sandybrown ;
+}
+   
+header ul li a:hover {
+  color: gray;
+  transition: 3s;
+}
+
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-image: url(images/sch2.png);
+   color: #333;
+}
+
+.container {
+   max-width: 800px;
+   margin: 50px auto;
+   padding: 20px;
+   background-color: whitesmoke;
+   border-radius: 8px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+        
+h1 {
+  text-align: center;
+  color: whitesmoke;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+button {
+  background-color:black;
+  color:white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color:chocolate;
+}
+
+.social-links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: gray;
+}
+
+</style>
+<body>
+  <header class="logo-section">
+    <img src="images/sch.png" class="logo">
+    <h1>CONTACT US</h1>
+    <br>
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="history.html">HISTORY</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="customer.html">CUSTOMER</a></li>
+        <li><a href="marketposition.html">MARKET POSITION</a></li>
+        <li><a href="branding.html">BRANDING</a></li>
+        <li><a href="services.html">SERVICES</a></li> 
+        <li><a href="review.html">REVIEWS</a></li>
+        <li><a href="contact_us.html">CONTACT US</a></li> 
+        <li><a href="gallery.html">GALLERY</a></li>
+      </ul>
+  </header>
+ 
+  <body>
+    <div class="container">
+
+        <form id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="social-links">
+            <h3>Connect with us</h3>
+            <br>
+            <a href="https://www.facebook.com/p/Star-House-61553297906379/" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/starcoffee.official/" target="_blank">Instagram</a>
+            <a href="https://www.tiktok.com/@starcoffeehouseofficial" target="_blank">TikTok</a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for reaching out! We will get back to you soon.');
+        });
+    </script>
+</body>
+</html>

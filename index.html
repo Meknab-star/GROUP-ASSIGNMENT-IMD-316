@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HOMEPAGE</title>
+	<style >
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Times New Roman',;sans-serif;
+		}
+
+		section{
+			width: 100%;
+			padding: 100px;
+			min-height: 100vh;
+			align-items: center;
+			position: relative;
+			justify-content: space-between;
+			display: flex;
+			background:black;
+		}
+		header{
+			top: 0;
+			left: 0;
+			width: 100%;
+			position: absolute;
+			padding: 20px 100px;
+			justify-content: space-between;
+			align-items: center;
+			display: flex;
+		}
+		header .logo{
+			max-width: 80px;
+			position: relative;
+			height: 90px;
+			width: 90px;
+			
+		}
+		header ul{
+			display: flex;
+			position: relative;
+			color:#FF9D23 ;
+		}
+		header ul li{
+			list-style: none;
+		}
+
+		header ul li a{
+			
+			margin-left:40px ;
+			display: inline-block;
+			font-weight: 400;
+			text-decoration: none;
+			color:#ECB176;
+
+
+		}
+		header ul li a:hover {
+ 			color: maroon;
+ 			transition: 3s;
+		}
+			
+
+
+		.content{
+			 width: 100%;
+			 display: flex;
+			 align-items: center;
+			 justify-content: space-between;
+			 position: relative;
+		}
+		.content .textbox{
+			max-width: 610px;
+			position: relative;
+		}
+		.content .textbox h2{
+			color: white;
+			line-height: 1.4;
+			font-weight: 400px;
+			font-size: 40px;
+		}
+		.content .textbox h2 span{
+			color: #B17457;
+			font-size: 100px;
+			font-weight: 910px;
+		}
+		.content .textbox p{
+			color: white;
+			text-align: justify;
+		}
+		.content .imgBox{
+			display: flex;
+			justify-content: flex-end;
+			width: 600px;
+			margin-top: 50px;
+			padding-right: 70px;
+			height: 650px;
+			
+	
+
+		
+		
+
+		}
+		.content .imgBox img{
+				border-radius: 80px;
+				text-align: left;
+				
+		}
+
+		.social{
+			top: 50%;
+			flex-direction:column ;
+			align-items: center;
+			display: flex;
+			transform: translateY(-40%);
+			right: 0px;
+			position: absolute;
+			justify-content: right;
+			margin-left: 20px;
+			margin-right: 10px;
+			padding-left: 40px;
+			padding-right: 50px;
+
+
+		}
+		.social li{
+			list-style: none;
+			margin-left: 5px;
+			
+		}
+
+	
+		}
+		.social li a{
+			margin: 6px;
+			display: inline-block;
+			transform: scale(0.6);
+			
+		}
+		.back-video{
+			position:absolute;
+			right: 0;
+			bottom: 0;
+			z-index: 0;
+		}
+		@media (min-aspect-ratio:16/9){
+				.back-video{
+					width: 100%;
+					height: 100%auto;
+				}
+
+		}
+
+		@media (max-aspect-ratio:16/9){
+				.back-video{
+					width: auto;
+					height: 100%;
+				}
+		}
+	
+		
+		
+	</style>
+</head>
+<body>
+	
+
+	<script>
+		
+					alert("Welcome to Star House Coffee\n We ready to serve you!");
+	</script>
+	<section>
+
+		
+		<header>
+
+			<a href=""> <img src="images/logosh.jpg "class="logo"></a>
+		<ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="menu.html"> MENU</a></li>
+                <li><a href="customer.html">CUSTOMER</a></li>
+                <li><a href="marketposition.html">MARKET POSITION</a></li>
+                 <li><a href="branding.html">BRANDING</a></li>
+                  <li><a href="services.html">SERVICES</a></li> 
+                    <li><a href="review.html">REVIEWS</a></li>  
+                    <li><a href="gallery.html">GALLERY
+                    </a></li>
+                    <li><a href="contact_us.html">CONTACT US
+                    </a></li>
+            </ul>
+        </header>
+
+        <div class="hero">
+
+	<video autoplay loop muted plays-inline class="back-video">
+		<source src="video/videobackground.mp4" type="video/mp4">
+
+	</video>
+        <div class="content">
+        	<div class="textbox">
+        		<h2>It's not just Coffee<br>It's<span>Star Coffee House</span></h2>
+        		<p> Every cup, in our opinion at Star House Coffee, has a story to tell. Located in the center of our neighborhood, we are more than simply a café; we are a welcoming space where people come together to share experiences, exchange ideas, and create memories. We use only the best beans from across the world to create our passionately produced coffee, which awakens your senses with its rich, robust flavors. Your home away from home is Star House Coffee, whether you're here for a quick pick-me-up, a restful break, or to catch up with friends. Come on in, enjoy the scent, and allow us to transform your day, one cup at a time.
+</p>
+        		
+
+        	</div>
+        	<div class="footer">
+        		
+        	
+        		<div class="imgBox">
+        			<img src="images/starcofee.jpg">
+        		</div>
+        	</div>
+        </div>
+      </div>
+  
+
+        	<ul class="social">
+        		<li><a href="https://www.instagram.com/starcoffee.official?igsh=NWtzdXk3enZjNHli"><img src="images/instagram50.png
+        			"></li>
+        		<li><a href="https://www.facebook.com/p/Star-House-61553297906379/"><img src="images/facebook50.png"></li>
+        			<li><a href="https://www.tiktok.com/@starcoffeehouseofficial"><img src="images/tiktok50.png"></li>
+        			
+        		
+        	</ul>
+
+       
+        
+        	
+        	
+
+        		
+       
+</body>
+</html>
